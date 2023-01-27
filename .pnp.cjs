@@ -27,6 +27,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@types/node", "npm:18.11.18"],\
+          ["prisma", "npm:4.9.0"],\
           ["ts-node", "virtual:830656a5f97a9ae7bb628b3ba64ce83928a8149b7d9c58f4260a639f9f58e9c83d69f934e0558729719df19319e854b68b79d6ff11fb37567567f30467745ebb#npm:10.9.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.4#optional!builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
         ],\
@@ -68,6 +69,15 @@ const RAW_RUNTIME_STATE =
           ["@jridgewell/trace-mapping", "npm:0.3.9"],\
           ["@jridgewell/resolve-uri", "npm:3.1.0"],\
           ["@jridgewell/sourcemap-codec", "npm:1.4.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@prisma/engines", [\
+      ["npm:4.9.0", {\
+        "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-4.9.0-dbdcefcf75/node_modules/@prisma/engines/",\
+        "packageDependencies": [\
+          ["@prisma/engines", "npm:4.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -171,12 +181,23 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["prisma", [\
+      ["npm:4.9.0", {\
+        "packageLocation": "./.yarn/unplugged/prisma-npm-4.9.0-1fd992929b/node_modules/prisma/",\
+        "packageDependencies": [\
+          ["prisma", "npm:4.9.0"],\
+          ["@prisma/engines", "npm:4.9.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["prisma-test", [\
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
           ["prisma-test", "workspace:."],\
           ["@types/node", "npm:18.11.18"],\
+          ["prisma", "npm:4.9.0"],\
           ["ts-node", "virtual:830656a5f97a9ae7bb628b3ba64ce83928a8149b7d9c58f4260a639f9f58e9c83d69f934e0558729719df19319e854b68b79d6ff11fb37567567f30467745ebb#npm:10.9.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.4#optional!builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
         ],\

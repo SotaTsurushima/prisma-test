@@ -38,6 +38,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/engines@npm:4.9.0":
+  version: 4.9.0
+  resolution: "@prisma/engines@npm:4.9.0"
+  checksum: 32e5efbfcbc1699a7b47f0ef48a446053d69054fbd31558986f54786a6d80cc742efdc867f987b6350665dd6526a1f963cd2c530d7ae7452a577c54ca5d1d60f
+  languageName: node
+  linkType: hard
+
 "@tsconfig/node10@npm:^1.0.7":
   version: 1.0.9
   resolution: "@tsconfig/node10@npm:1.0.9"
@@ -122,10 +129,23 @@ __metadata:
   resolution: "prisma-test@workspace:."
   dependencies:
     "@types/node": "npm:^18.11.18"
+    prisma: "npm:^4.9.0"
     ts-node: "npm:^10.9.1"
     typescript: "npm:^4.9.4"
   languageName: unknown
   linkType: soft
+
+"prisma@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "prisma@npm:4.9.0"
+  dependencies:
+    "@prisma/engines": "npm:4.9.0"
+  bin:
+    prisma: build/index.js
+    prisma2: build/index.js
+  checksum: 2dc0f1fe66c5968b7c953f76c9544b7826ce91f7851c89a385f402d19868bfc2054cbae15aa88808508523f7a9541ba31b03f65c057a6a4297aa36bd0b3c919a
+  languageName: node
+  linkType: hard
 
 "ts-node@npm:^10.9.1":
   version: 10.9.1
